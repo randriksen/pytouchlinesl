@@ -1,0 +1,2724 @@
+{
+  "zones": {
+    "transaction_time": "2024-08-22T15:46:33.843796+02:00",
+    "elements": [
+      {
+        "zone": {
+          "id": 2335,
+          "parentId": 2333,
+          "time": "2024-08-22T15:44:00.936163",
+          "duringChange": false,
+          "index": 0,
+          "currentTemperature": 229,
+          "setTemperature": 170,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "noAlarm",
+          "signalStrength": 23,
+          "batteryLevel": 100,
+          "actuatorsOpen": 0,
+          "humidity": 58,
+          "visibility": true
+        },
+        "description": {
+          "id": 2336,
+          "parentId": 2335,
+          "name": "Playroom",
+          "styleId": 3,
+          "styleIcon": "children",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2337,
+          "parentId": 2335,
+          "mode": "globalSchedule",
+          "constTempTime": 60,
+          "setTemperature": 170,
+          "scheduleIndex": 3
+        },
+        "schedule": {
+          "id": 2339,
+          "parentId": 2335,
+          "index": -1,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2354,
+          "parentId": 2333,
+          "time": "2024-08-12T21:40:43.451932",
+          "duringChange": false,
+          "index": 1,
+          "currentTemperature": null,
+          "setTemperature": 169,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2355,
+          "parentId": 2354,
+          "name": "Zone 2",
+          "styleId": 1,
+          "styleIcon": "bathroom",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2356,
+          "parentId": 2354,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2358,
+          "parentId": 2354,
+          "index": -2,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2373,
+          "parentId": 2333,
+          "time": "2024-08-22T15:42:46.320969",
+          "duringChange": false,
+          "index": 2,
+          "currentTemperature": 222,
+          "setTemperature": 180,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "noAlarm",
+          "signalStrength": 30,
+          "batteryLevel": 100,
+          "actuatorsOpen": 0,
+          "humidity": 59,
+          "visibility": true
+        },
+        "description": {
+          "id": 2374,
+          "parentId": 2373,
+          "name": "Lounge",
+          "styleId": 2,
+          "styleIcon": "kitchen",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2375,
+          "parentId": 2373,
+          "mode": "globalSchedule",
+          "constTempTime": 60,
+          "setTemperature": 180,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2377,
+          "parentId": 2373,
+          "index": -3,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2392,
+          "parentId": 2333,
+          "time": "2024-08-12T21:41:17.584356",
+          "duringChange": false,
+          "index": 3,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2393,
+          "parentId": 2392,
+          "name": "Zone 4",
+          "styleId": 3,
+          "styleIcon": "children",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2394,
+          "parentId": 2392,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2396,
+          "parentId": 2392,
+          "index": -4,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2411,
+          "parentId": 2333,
+          "time": "2024-08-22T15:18:44.608665",
+          "duringChange": false,
+          "index": 4,
+          "currentTemperature": 221,
+          "setTemperature": 180,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "noAlarm",
+          "signalStrength": 53,
+          "batteryLevel": 100,
+          "actuatorsOpen": 0,
+          "humidity": 61,
+          "visibility": true
+        },
+        "description": {
+          "id": 2412,
+          "parentId": 2411,
+          "name": "Kitchen",
+          "styleId": 0,
+          "styleIcon": "living_room",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2413,
+          "parentId": 2411,
+          "mode": "globalSchedule",
+          "constTempTime": 60,
+          "setTemperature": 180,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2415,
+          "parentId": 2411,
+          "index": -5,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2430,
+          "parentId": 2333,
+          "time": "2024-08-22T15:32:21.208915",
+          "duringChange": false,
+          "index": 5,
+          "currentTemperature": 231,
+          "setTemperature": 170,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "noAlarm",
+          "signalStrength": 100,
+          "batteryLevel": 100,
+          "actuatorsOpen": 0,
+          "humidity": 58,
+          "visibility": true
+        },
+        "description": {
+          "id": 2431,
+          "parentId": 2430,
+          "name": "Utility Room",
+          "styleId": 5,
+          "styleIcon": "wardrobe",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2432,
+          "parentId": 2430,
+          "mode": "constantTemp",
+          "constTempTime": 60,
+          "setTemperature": 170,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2434,
+          "parentId": 2430,
+          "index": -6,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2448,
+          "parentId": 2333,
+          "time": "2024-08-22T15:45:26.259793",
+          "duringChange": false,
+          "index": 6,
+          "currentTemperature": 225,
+          "setTemperature": 170,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "noAlarm",
+          "signalStrength": 24,
+          "batteryLevel": 100,
+          "actuatorsOpen": 0,
+          "humidity": 58,
+          "visibility": true
+        },
+        "description": {
+          "id": 2449,
+          "parentId": 2448,
+          "name": "Laura Office",
+          "styleId": 0,
+          "styleIcon": "living_room",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2450,
+          "parentId": 2448,
+          "mode": "constantTemp",
+          "constTempTime": 60,
+          "setTemperature": 170,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2452,
+          "parentId": 2448,
+          "index": -7,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2466,
+          "parentId": 2333,
+          "time": "2024-08-22T15:44:26.475553",
+          "duringChange": false,
+          "index": 7,
+          "currentTemperature": 246,
+          "setTemperature": 170,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "noAlarm",
+          "signalStrength": 31,
+          "batteryLevel": 100,
+          "actuatorsOpen": 0,
+          "humidity": 52,
+          "visibility": true
+        },
+        "description": {
+          "id": 2467,
+          "parentId": 2466,
+          "name": "Jon Office",
+          "styleId": 0,
+          "styleIcon": "living_room",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2468,
+          "parentId": 2466,
+          "mode": "constantTemp",
+          "constTempTime": 60,
+          "setTemperature": 170,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2470,
+          "parentId": 2466,
+          "index": -8,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2484,
+          "parentId": 2333,
+          "time": "2024-08-22T15:36:08.168114",
+          "duringChange": false,
+          "index": 8,
+          "currentTemperature": 221,
+          "setTemperature": 170,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "noAlarm",
+          "signalStrength": 87,
+          "batteryLevel": 100,
+          "actuatorsOpen": 0,
+          "humidity": 59,
+          "visibility": true
+        },
+        "description": {
+          "id": 2485,
+          "parentId": 2484,
+          "name": "Guest Bed",
+          "styleId": 4,
+          "styleIcon": "bedroom",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2486,
+          "parentId": 2484,
+          "mode": "globalSchedule",
+          "constTempTime": 60,
+          "setTemperature": 170,
+          "scheduleIndex": 2
+        },
+        "schedule": {
+          "id": 2488,
+          "parentId": 2484,
+          "index": -9,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2503,
+          "parentId": 2333,
+          "time": "2024-08-22T15:44:30.953926",
+          "duringChange": false,
+          "index": 9,
+          "currentTemperature": 228,
+          "setTemperature": 170,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "noAlarm",
+          "signalStrength": 42,
+          "batteryLevel": 100,
+          "actuatorsOpen": 0,
+          "humidity": 58,
+          "visibility": true
+        },
+        "description": {
+          "id": 2504,
+          "parentId": 2503,
+          "name": "Snug",
+          "styleId": 0,
+          "styleIcon": "living_room",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2505,
+          "parentId": 2503,
+          "mode": "globalSchedule",
+          "constTempTime": 60,
+          "setTemperature": 170,
+          "scheduleIndex": 4
+        },
+        "schedule": {
+          "id": 2507,
+          "parentId": 2503,
+          "index": -10,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2522,
+          "parentId": 2333,
+          "time": "2024-08-22T15:41:17.679043",
+          "duringChange": false,
+          "index": 10,
+          "currentTemperature": 224,
+          "setTemperature": 170,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "noAlarm",
+          "signalStrength": 13,
+          "batteryLevel": 100,
+          "actuatorsOpen": 0,
+          "humidity": 61,
+          "visibility": true
+        },
+        "description": {
+          "id": 2523,
+          "parentId": 2522,
+          "name": "Master Bed",
+          "styleId": 4,
+          "styleIcon": "bedroom",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2524,
+          "parentId": 2522,
+          "mode": "globalSchedule",
+          "constTempTime": 60,
+          "setTemperature": 170,
+          "scheduleIndex": 2
+        },
+        "schedule": {
+          "id": 2526,
+          "parentId": 2522,
+          "index": -11,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2541,
+          "parentId": 2333,
+          "time": "2024-08-22T15:46:11.13502",
+          "duringChange": false,
+          "index": 11,
+          "currentTemperature": 215,
+          "setTemperature": 170,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "noAlarm",
+          "signalStrength": 97,
+          "batteryLevel": 100,
+          "actuatorsOpen": 0,
+          "humidity": 61,
+          "visibility": true
+        },
+        "description": {
+          "id": 2542,
+          "parentId": 2541,
+          "name": "Attic Bed",
+          "styleId": 4,
+          "styleIcon": "bedroom",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2543,
+          "parentId": 2541,
+          "mode": "globalSchedule",
+          "constTempTime": 60,
+          "setTemperature": 170,
+          "scheduleIndex": 3
+        },
+        "schedule": {
+          "id": 2545,
+          "parentId": 2541,
+          "index": -12,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2560,
+          "parentId": 2333,
+          "time": "2024-08-12T21:43:23.776791",
+          "duringChange": false,
+          "index": 12,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2561,
+          "parentId": 2560,
+          "name": "Zone 13",
+          "styleId": 4,
+          "styleIcon": "bedroom",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2562,
+          "parentId": 2560,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2564,
+          "parentId": 2560,
+          "index": -13,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2579,
+          "parentId": 2333,
+          "time": "2024-08-12T21:43:41.601669",
+          "duringChange": false,
+          "index": 13,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2580,
+          "parentId": 2579,
+          "name": "Zone 14",
+          "styleId": 5,
+          "styleIcon": "wardrobe",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2581,
+          "parentId": 2579,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2583,
+          "parentId": 2579,
+          "index": -14,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2597,
+          "parentId": 2333,
+          "time": "2024-08-12T21:43:50.660486",
+          "duringChange": false,
+          "index": 14,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2598,
+          "parentId": 2597,
+          "name": "Zone 15",
+          "styleId": 6,
+          "styleIcon": "corridor",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2599,
+          "parentId": 2597,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2601,
+          "parentId": 2597,
+          "index": -15,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2615,
+          "parentId": 2333,
+          "time": "2024-08-12T21:44:08.621444",
+          "duringChange": false,
+          "index": 15,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2616,
+          "parentId": 2615,
+          "name": "Zone 16",
+          "styleId": 7,
+          "styleIcon": "garage",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2617,
+          "parentId": 2615,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2619,
+          "parentId": 2615,
+          "index": -16,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2633,
+          "parentId": 2333,
+          "time": "2024-08-12T21:44:17.644989",
+          "duringChange": false,
+          "index": 16,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2634,
+          "parentId": 2633,
+          "name": "Zone 17",
+          "styleId": 0,
+          "styleIcon": "living_room",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2635,
+          "parentId": 2633,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2637,
+          "parentId": 2633,
+          "index": -17,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2652,
+          "parentId": 2333,
+          "time": "2024-08-12T21:44:35.685728",
+          "duringChange": false,
+          "index": 17,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2653,
+          "parentId": 2652,
+          "name": "Zone 18",
+          "styleId": 1,
+          "styleIcon": "bathroom",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2654,
+          "parentId": 2652,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2656,
+          "parentId": 2652,
+          "index": -18,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2671,
+          "parentId": 2333,
+          "time": "2024-08-12T21:44:44.671977",
+          "duringChange": false,
+          "index": 18,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2672,
+          "parentId": 2671,
+          "name": "Zone 19",
+          "styleId": 2,
+          "styleIcon": "kitchen",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2673,
+          "parentId": 2671,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2675,
+          "parentId": 2671,
+          "index": -19,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2690,
+          "parentId": 2333,
+          "time": "2024-08-12T21:45:02.78159",
+          "duringChange": false,
+          "index": 19,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2691,
+          "parentId": 2690,
+          "name": "Zone 20",
+          "styleId": 3,
+          "styleIcon": "children",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2692,
+          "parentId": 2690,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2694,
+          "parentId": 2690,
+          "index": -20,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2709,
+          "parentId": 2333,
+          "time": "2024-08-12T21:45:11.667288",
+          "duringChange": false,
+          "index": 20,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2710,
+          "parentId": 2709,
+          "name": "Zone 21",
+          "styleId": 4,
+          "styleIcon": "bedroom",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2711,
+          "parentId": 2709,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2713,
+          "parentId": 2709,
+          "index": -21,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2728,
+          "parentId": 2333,
+          "time": "2024-08-12T21:45:29.630532",
+          "duringChange": false,
+          "index": 21,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2729,
+          "parentId": 2728,
+          "name": "Zone 22",
+          "styleId": 5,
+          "styleIcon": "wardrobe",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2730,
+          "parentId": 2728,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2732,
+          "parentId": 2728,
+          "index": -22,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2746,
+          "parentId": 2333,
+          "time": "2024-08-12T21:45:38.660197",
+          "duringChange": false,
+          "index": 22,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2747,
+          "parentId": 2746,
+          "name": "Zone 23",
+          "styleId": 6,
+          "styleIcon": "corridor",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2748,
+          "parentId": 2746,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2750,
+          "parentId": 2746,
+          "index": -23,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2764,
+          "parentId": 2333,
+          "time": "2024-08-12T21:45:57.446097",
+          "duringChange": false,
+          "index": 23,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2765,
+          "parentId": 2764,
+          "name": "Zone 24",
+          "styleId": 7,
+          "styleIcon": "garage",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2766,
+          "parentId": 2764,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2768,
+          "parentId": 2764,
+          "index": -24,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2782,
+          "parentId": 2333,
+          "time": "2024-08-12T21:46:05.679477",
+          "duringChange": false,
+          "index": 24,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2783,
+          "parentId": 2782,
+          "name": "Zone 25",
+          "styleId": 0,
+          "styleIcon": "living_room",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2784,
+          "parentId": 2782,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2786,
+          "parentId": 2782,
+          "index": -25,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2801,
+          "parentId": 2333,
+          "time": "2024-08-12T21:46:23.808992",
+          "duringChange": false,
+          "index": 25,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2802,
+          "parentId": 2801,
+          "name": "Zone 26",
+          "styleId": 1,
+          "styleIcon": "bathroom",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2803,
+          "parentId": 2801,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2805,
+          "parentId": 2801,
+          "index": -26,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2820,
+          "parentId": 2333,
+          "time": "2024-08-12T21:46:32.95147",
+          "duringChange": false,
+          "index": 26,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2821,
+          "parentId": 2820,
+          "name": "Zone 27",
+          "styleId": 2,
+          "styleIcon": "kitchen",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2822,
+          "parentId": 2820,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2824,
+          "parentId": 2820,
+          "index": -27,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2839,
+          "parentId": 2333,
+          "time": "2024-08-12T21:46:50.726384",
+          "duringChange": false,
+          "index": 27,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2840,
+          "parentId": 2839,
+          "name": "Zone 28",
+          "styleId": 3,
+          "styleIcon": "children",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2841,
+          "parentId": 2839,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2843,
+          "parentId": 2839,
+          "index": -28,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2858,
+          "parentId": 2333,
+          "time": "2024-08-12T21:46:59.781723",
+          "duringChange": false,
+          "index": 28,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2859,
+          "parentId": 2858,
+          "name": "Zone 29",
+          "styleId": 4,
+          "styleIcon": "bedroom",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2860,
+          "parentId": 2858,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2862,
+          "parentId": 2858,
+          "index": -29,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2877,
+          "parentId": 2333,
+          "time": "2024-08-12T21:47:17.701659",
+          "duringChange": false,
+          "index": 29,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2878,
+          "parentId": 2877,
+          "name": "Zone 30",
+          "styleId": 5,
+          "styleIcon": "wardrobe",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2879,
+          "parentId": 2877,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2881,
+          "parentId": 2877,
+          "index": -30,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2895,
+          "parentId": 2333,
+          "time": "2024-08-12T21:47:26.773943",
+          "duringChange": false,
+          "index": 30,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2896,
+          "parentId": 2895,
+          "name": "Zone 31",
+          "styleId": 6,
+          "styleIcon": "corridor",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2897,
+          "parentId": 2895,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2899,
+          "parentId": 2895,
+          "index": -31,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2913,
+          "parentId": 2333,
+          "time": "2024-08-12T21:47:44.682668",
+          "duringChange": false,
+          "index": 31,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2914,
+          "parentId": 2913,
+          "name": "Zone 32",
+          "styleId": 7,
+          "styleIcon": "garage",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2915,
+          "parentId": 2913,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2917,
+          "parentId": 2913,
+          "index": -32,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2931,
+          "parentId": 2333,
+          "time": "2024-08-12T21:47:53.747407",
+          "duringChange": false,
+          "index": 32,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2932,
+          "parentId": 2931,
+          "name": "Zone 33",
+          "styleId": 0,
+          "styleIcon": "living_room",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2933,
+          "parentId": 2931,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2935,
+          "parentId": 2931,
+          "index": -33,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2950,
+          "parentId": 2333,
+          "time": "2024-08-12T21:48:11.683631",
+          "duringChange": false,
+          "index": 33,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2951,
+          "parentId": 2950,
+          "name": "Zone 34",
+          "styleId": 1,
+          "styleIcon": "bathroom",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2952,
+          "parentId": 2950,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2954,
+          "parentId": 2950,
+          "index": -34,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2969,
+          "parentId": 2333,
+          "time": "2024-08-12T21:48:20.737711",
+          "duringChange": false,
+          "index": 34,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2970,
+          "parentId": 2969,
+          "name": "Zone 35",
+          "styleId": 2,
+          "styleIcon": "kitchen",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2971,
+          "parentId": 2969,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2973,
+          "parentId": 2969,
+          "index": -35,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 2988,
+          "parentId": 2333,
+          "time": "2024-08-12T21:48:38.693448",
+          "duringChange": false,
+          "index": 35,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 2989,
+          "parentId": 2988,
+          "name": "Zone 36",
+          "styleId": 3,
+          "styleIcon": "children",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 2990,
+          "parentId": 2988,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 2992,
+          "parentId": 2988,
+          "index": -36,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 3007,
+          "parentId": 2333,
+          "time": "2024-08-12T21:48:43.218415",
+          "duringChange": false,
+          "index": 36,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 3008,
+          "parentId": 3007,
+          "name": "Zone 37",
+          "styleId": 4,
+          "styleIcon": "bedroom",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 3009,
+          "parentId": 3007,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 3011,
+          "parentId": 3007,
+          "index": -37,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 3026,
+          "parentId": 2333,
+          "time": "2024-08-12T21:48:52.184392",
+          "duringChange": false,
+          "index": 37,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 3027,
+          "parentId": 3026,
+          "name": "Zone 38",
+          "styleId": 5,
+          "styleIcon": "wardrobe",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 3028,
+          "parentId": 3026,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 3030,
+          "parentId": 3026,
+          "index": -38,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 3044,
+          "parentId": 2333,
+          "time": "2024-08-12T21:48:56.733603",
+          "duringChange": false,
+          "index": 38,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 3045,
+          "parentId": 3044,
+          "name": "Zone 39",
+          "styleId": 6,
+          "styleIcon": "corridor",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 3046,
+          "parentId": 3044,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 3048,
+          "parentId": 3044,
+          "index": -39,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      },
+      {
+        "zone": {
+          "id": 3062,
+          "parentId": 2333,
+          "time": "2024-08-12T21:49:05.772826",
+          "duringChange": false,
+          "index": 39,
+          "currentTemperature": null,
+          "setTemperature": 190,
+          "flags": {
+            "relayState": "off",
+            "minOneWindowOpen": false,
+            "algorithm": "heating",
+            "floorSensor": 0,
+            "humidityAlgorytm": 0,
+            "zoneExcluded": 0
+          },
+          "zoneState": "zoneOff",
+          "signalStrength": null,
+          "batteryLevel": null,
+          "actuatorsOpen": 0,
+          "humidity": 0,
+          "visibility": true
+        },
+        "description": {
+          "id": 3063,
+          "parentId": 3062,
+          "name": "Zone 40",
+          "styleId": 7,
+          "styleIcon": "garage",
+          "duringChange": false
+        },
+        "mode": {
+          "id": 3064,
+          "parentId": 3062,
+          "mode": "timeLimit",
+          "constTempTime": 60,
+          "setTemperature": 200,
+          "scheduleIndex": 0
+        },
+        "schedule": {
+          "id": 3066,
+          "parentId": 3062,
+          "index": -40,
+          "p0Days": ["1", "1", "1", "1", "1", "0", "0"],
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 240 },
+            { "start": 660, "stop": 1380, "temp": 240 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p0SetbackTemp": 260,
+          "p1Days": ["0", "0", "0", "0", "0", "1", "1"],
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1SetbackTemp": 150
+        },
+        "actuators": [],
+        "underfloor": {},
+        "windowsSensors": [],
+        "additionalContacts": []
+      }
+    ],
+    "globalSchedules": {
+      "time": "2024-08-20T18:39:19.845888",
+      "duringChange": false,
+      "elements": [
+        {
+          "id": 2948,
+          "parentId": 2333,
+          "index": 0,
+          "name": "Living Spaces",
+          "p0Days": ["1", "1", "1", "1", "1", "1", "1"],
+          "p0SetbackTemp": 180,
+          "p0Intervals": [
+            { "start": 300, "stop": 540, "temp": 200 },
+            { "start": 1020, "stop": 1200, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1Days": ["0", "0", "0", "0", "0", "0", "0"],
+          "p1SetbackTemp": 175,
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ]
+        },
+        {
+          "id": 2967,
+          "parentId": 2333,
+          "index": 1,
+          "name": "Holiday",
+          "p0Days": ["1", "1", "1", "1", "1", "1", "1"],
+          "p0SetbackTemp": 150,
+          "p0Intervals": [
+            { "start": 300, "stop": 600, "temp": 170 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1Days": ["0", "0", "0", "0", "0", "0", "0"],
+          "p1SetbackTemp": 260,
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ]
+        },
+        {
+          "id": 2986,
+          "parentId": 2333,
+          "index": 2,
+          "name": "Bedrooms",
+          "p0Days": ["1", "1", "1", "1", "1", "1", "1"],
+          "p0SetbackTemp": 170,
+          "p0Intervals": [
+            { "start": 300, "stop": 540, "temp": 190 },
+            { "start": 1200, "stop": 1320, "temp": 190 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1Days": ["0", "0", "0", "0", "0", "0", "0"],
+          "p1SetbackTemp": 190,
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ]
+        },
+        {
+          "id": 3005,
+          "parentId": 2333,
+          "index": 3,
+          "name": "Public Rooms",
+          "p0Days": ["1", "1", "1", "1", "1", "1", "1"],
+          "p0SetbackTemp": 170,
+          "p0Intervals": [
+            { "start": 300, "stop": 540, "temp": 190 },
+            { "start": 1020, "stop": 1200, "temp": 190 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1Days": ["0", "0", "0", "0", "0", "0", "0"],
+          "p1SetbackTemp": 150,
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ]
+        },
+        {
+          "id": 3024,
+          "parentId": 2333,
+          "index": 4,
+          "name": "Snug",
+          "p0Days": ["1", "1", "1", "1", "1", "1", "1"],
+          "p0SetbackTemp": 170,
+          "p0Intervals": [
+            { "start": 1020, "stop": 1260, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ],
+          "p1Days": ["0", "0", "0", "0", "0", "0", "0"],
+          "p1SetbackTemp": 190,
+          "p1Intervals": [
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 },
+            { "start": 6100, "stop": 6100, "temp": 200 }
+          ]
+        }
+      ]
+    },
+    "controllerParameters": {
+      "controllerMode": {
+        "id": 2334,
+        "parentId": 0,
+        "type": 108,
+        "txtId": 0,
+        "iconId": 0,
+        "value": 0,
+        "menuId": 1000
+      },
+      "globalSchedulesNumber": {}
+    }
+  },
+  "tiles": [
+    {
+      "id": 2326,
+      "parentId": 0,
+      "type": 11,
+      "menuId": 0,
+      "orderId": null,
+      "visibility": true,
+      "params": { "description": "Relay", "workingStatus": false, "txtId": 1736, "iconId": 5 }
+    },
+    {
+      "id": 2328,
+      "parentId": 0,
+      "type": 11,
+      "menuId": 0,
+      "orderId": null,
+      "visibility": true,
+      "params": { "description": "Relay", "workingStatus": false, "txtId": 3089, "iconId": 17 }
+    },
+    {
+      "id": 3080,
+      "parentId": 0,
+      "type": 50,
+      "menuId": 0,
+      "orderId": null,
+      "visibility": true,
+      "params": {
+        "description": "Controller software version",
+        "version": "1.0.6",
+        "txtId": 873,
+        "iconId": 29,
+        "companyId": 97,
+        "controllerName": "L-11",
+        "mainControllerId": 87
+      }
+    }
+  ],
+  "tilesOrder": null,
+  "tilesLastUpdate": "2024-08-22 15:46:33.921131+02"
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "default": false,
+    "name": "Test Module",
+    "email": "foo@bar.com",
+    "type": "zones_controller",
+    "controllerStatus": "active",
+    "moduleStatus": "active",
+    "additionalInformation": "foo@bar.com",
+    "phoneNumber": null,
+    "zipCode": "12345",
+    "tag": "ROTH",
+    "country": "United Kingdom",
+    "gmtId": 30,
+    "gmtTime": "1",
+    "postcodePolicyAccepted": true,
+    "style": "roth",
+    "version": "ROTH: L-11 (v.1.0.6)",
+    "company": "roth",
+    "udid": "1234a5678a9123a456a7891234a56789"
+  }
+]
