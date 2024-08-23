@@ -1,6 +1,8 @@
 # A Python Library for Roth's TouchlineSL System
 
 <a href="https://github.com/jnsgruk/pytouchlinesl/actions/workflows/test.yaml"><img src="https://github.com/jnsgruk/pytouchlinesl/actions/workflows/test.yaml/badge.svg"></a>
+<a href="https://github.com/jnsgruk/pytouchlinesl/actions/workflows/publish.yaml"><img src="https://github.com/jnsgruk/pytouchlinesl/actions/workflows/publish.yaml/badge.svg"></a>
+<a href="https://pypi.org/project/pytouchlinesl/"><img src="https://img.shields.io/pypi/v/pytouchlinesl"></a>
 
 Roth TouchlineSL is a control system for underfloor heating, cooling and radiator control. They
 have a public API which is documented on [their
