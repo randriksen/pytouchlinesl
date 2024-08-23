@@ -32,6 +32,14 @@ the result is cached for 30 seconds. Any POST requests made (setting temperature
 to schedules) will invalidate the cache, and all GET methods have a `refresh` argument that can be
 used to force a refresh of the underlying data.
 
+## Installation
+
+The package can be installed from PyPi as usual:
+
+```bash
+pip install pytouchlinesl
+```
+
 ## Example Usage
 
 ```python
