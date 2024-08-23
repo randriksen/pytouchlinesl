@@ -1,0 +1,41 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - "*"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  tests:
+    uses: ./.github/workflows/_test.yaml
+
+  publish:
+    name: Build and Publish to PyPI
+    runs-on: ubuntu-latest
+    needs:
+      - tests
+
+    environment:
+      name: pypi
+      url: https://pypi.org/p/pytouchlinesl
+    permissions:
+      id-token: write
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+
+      - name: Install `uv`
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+
+      - name: Build the package
+        run: |
+          uvx --from build pyproject-build --installer uv
+
+      - name: Publish to PyPi
+        uses: pypa/gh-action-pypi-publish@v1.9.0
