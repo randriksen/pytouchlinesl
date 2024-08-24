@@ -143,12 +143,12 @@ class RothAPI(BaseClient):
                 # Empty intervals start/end with a value of 6100, which is invalid
                 # if sent in this request.
                 "p0Intervals": [
-                    i.model_dump(by_alias=True) for i in schedule.p0_intervals if i.start != 6100
+                    i.dict(by_alias=True) for i in schedule.p0_intervals if i.start != 6100
                 ],
                 "p1Days": schedule.p1_days,
                 "p1SetbackTemp": schedule.p1_setback_temp,
                 "p1Intervals": [
-                    i.model_dump(by_alias=True) for i in schedule.p1_intervals if i.start != 6100
+                    i.dict(by_alias=True) for i in schedule.p1_intervals if i.start != 6100
                 ],
             },
         }
