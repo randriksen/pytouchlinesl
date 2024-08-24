@@ -131,6 +131,22 @@ class RothAPI(BaseClient):
             or z.zone.id == zone_id
         ]
 
+        # pydantic v1 compatibility
+        try:
+            p0_intervals = [
+                i.dict(by_alias=True) for i in schedule.p0_intervals if i.start != 6100
+            ]
+            p1_intervals = [
+                i.dict(by_alias=True) for i in schedule.p1_intervals if i.start != 6100
+            ]
+        except AttributeError:
+            p0_intervals = [
+                i.model_dump(by_alias=True) for i in schedule.p0_intervals if i.start != 6100
+            ]
+            p1_intervals = [
+                i.model_dump(by_alias=True) for i in schedule.p1_intervals if i.start != 6100
+            ]
+
         # TODO: This be simplified with Pydantic models
         data = {
             "scheduleName": schedule.name,
@@ -142,14 +158,10 @@ class RothAPI(BaseClient):
                 "p0SetbackTemp": schedule.p0_setback_temp,
                 # Empty intervals start/end with a value of 6100, which is invalid
                 # if sent in this request.
-                "p0Intervals": [
-                    i.dict(by_alias=True) for i in schedule.p0_intervals if i.start != 6100
-                ],
+                "p0Intervals": p0_intervals,
                 "p1Days": schedule.p1_days,
                 "p1SetbackTemp": schedule.p1_setback_temp,
-                "p1Intervals": [
-                    i.dict(by_alias=True) for i in schedule.p1_intervals if i.start != 6100
-                ],
+                "p1Intervals": p1_intervals,
             },
         }
 
