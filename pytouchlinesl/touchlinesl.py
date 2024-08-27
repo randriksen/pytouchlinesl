@@ -52,6 +52,10 @@ class TouchlineSL:
                 raise TypeError("username and password must be strings if no client is provided")
             self._client = RothAPI(username=username, password=password)
 
+    async def user_id(self) -> str:
+        """Return the unique user ID of the authenticated account."""
+        return await self._client.user_id()
+
     async def modules(self, *, refresh: bool = False) -> list[Module]:
         """Report a list of Roth TouchlineSL modules associated with the account.
 

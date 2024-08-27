@@ -10,14 +10,14 @@ data_dir = Path(os.path.realpath(__file__)).parent / "sample-data"
 
 class FakeRothAPI(BaseClient):
     def __init__(self):
-        self.user_id = None
-        self.token = None
+        self._user_id = "123456789"
+        self._token = "deadbeef"
 
-    async def login(self):
-        self.token = "deadbeef"
+    async def user_id(self) -> str:
+        return self._user_id
 
     async def authenticated(self) -> bool:
-        return True if self.token else False
+        return True if self._token else False
 
     async def modules(self) -> list[AccountModuleModel]:
         with open(data_dir / "modules.json", "r") as f:
