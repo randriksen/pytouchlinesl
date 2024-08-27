@@ -11,7 +11,7 @@ class BaseClient(ABC):
     """Base API client implementation for Roth API clients."""
 
     @abstractmethod
-    async def user_id(self) -> str:
+    async def user_id(self) -> int:
         """Return the unique user id for the authenticated account."""
         pass
 

@@ -10,10 +10,10 @@ data_dir = Path(os.path.realpath(__file__)).parent / "sample-data"
 
 class FakeRothAPI(BaseClient):
     def __init__(self):
-        self._user_id = "123456789"
+        self._user_id = 123456789
         self._token = "deadbeef"
 
-    async def user_id(self) -> str:
+    async def user_id(self) -> int:
         return self._user_id
 
     async def authenticated(self) -> bool:

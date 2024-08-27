@@ -73,12 +73,12 @@ class RothAPI(BaseClient):
         self._user_id = resp.get("user_id")
         self._token = resp.get("token")
 
-    async def user_id(self) -> str:
+    async def user_id(self) -> int:
         """Return the unique user id for the authenticated account."""
         if self._token is None:
             await self._login()
 
-        assert isinstance(self._user_id, str)
+        assert isinstance(self._user_id, int)
         return self._user_id
 
     async def authenticated(self) -> bool:
