@@ -73,6 +73,11 @@ class Zone:
         return self._raw_data.zone.id
 
     @property
+    def battery_level(self) -> int | None:
+        """Return the battery level of the zone."""
+        return self._raw_data.zone.battery_level
+
+    @property
     def temperature(self) -> float | None:
         """Return the current temperature of the zone, if it's enabled, otherwise None."""
         if self._raw_data.zone.current_temperature:
