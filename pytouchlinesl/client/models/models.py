@@ -160,17 +160,17 @@ class AccountModuleModel(BaseModel):
     name: str
     email: str
     type: str
-    controller_status: str = Field(..., alias="controllerStatus")
-    module_status: str = Field(..., alias="moduleStatus")
-    additional_information: str = Field(..., alias="additionalInformation")
-    phone_number: Any = Field(..., alias="phoneNumber")
-    zip_code: str = Field(..., alias="zipCode")
-    tag: str
-    country: str
-    gmt_id: int = Field(..., alias="gmtId")
-    gmt_time: str = Field(..., alias="gmtTime")
+    controller_status: Optional[str] = Field(..., alias="controllerStatus")
+    module_status: Optional[str] = Field(..., alias="moduleStatus")
+    additional_information: Optional[str] = Field(..., alias="additionalInformation")
+    phone_number: Optional[Any] = Field(..., alias="phoneNumber")
+    zip_code: Optional[str] = Field(..., alias="zipCode")
+    tag: Optional[str]
+    country: Optional[str]
+    gmt_id: Optional[int] = Field(..., alias="gmtId")
+    gmt_time: Optional[str] = Field(..., alias="gmtTime")
     postcode_policy_accepted: bool = Field(..., alias="postcodePolicyAccepted")
-    style: str
-    version: str
-    company: str
+    style: Optional[str]
+    version: Optional[str]
+    company: Optional[str]
     udid: str
