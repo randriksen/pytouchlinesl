@@ -127,10 +127,10 @@ class ZonesModel(BaseModel):
 
 
 class ParamsModel(BaseModel):
-    description: str
+    description: Optional[str]
     working_status: Optional[bool] = Field(None, alias="workingStatus")
-    txt_id: int = Field(..., alias="txtId")
-    icon_id: int = Field(..., alias="iconId")
+    txt_id: Optional[int] = Field(..., alias="txtId")
+    icon_id: Optional[int] = Field(..., alias="iconId")
     version: Optional[str] = None
     company_id: Optional[int] = Field(None, alias="companyId")
     controller_name: Optional[str] = Field(None, alias="controllerName")
@@ -149,9 +149,9 @@ class TileModel(BaseModel):
 
 class ModuleModel(BaseModel):
     zones: ZonesModel
-    tiles: List[TileModel]
-    tiles_order: Any = Field(..., alias="tilesOrder")
-    tiles_last_update: str = Field(..., alias="tilesLastUpdate")
+    tiles: Optional[List[TileModel]]
+    tiles_order: Optional[Any] = Field(..., alias="tilesOrder")
+    tiles_last_update: Optional[str] = Field(..., alias="tilesLastUpdate")
 
 
 class AccountModuleModel(BaseModel):
