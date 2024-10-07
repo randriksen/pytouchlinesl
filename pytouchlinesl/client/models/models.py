@@ -129,8 +129,8 @@ class ZonesModel(BaseModel):
 class ParamsModel(BaseModel):
     description: Optional[str]
     working_status: Optional[bool] = Field(None, alias="workingStatus")
-    txt_id: Optional[int] = Field(..., alias="txtId")
-    icon_id: Optional[int] = Field(..., alias="iconId")
+    txt_id: Optional[int] = Field(None, alias="txtId")
+    icon_id: Optional[int] = Field(None, alias="iconId")
     version: Optional[str] = None
     company_id: Optional[int] = Field(None, alias="companyId")
     controller_name: Optional[str] = Field(None, alias="controllerName")
@@ -149,9 +149,9 @@ class TileModel(BaseModel):
 
 class ModuleModel(BaseModel):
     zones: ZonesModel
-    tiles: Optional[List[TileModel]]
-    tiles_order: Optional[Any] = Field(..., alias="tilesOrder")
-    tiles_last_update: Optional[str] = Field(..., alias="tilesLastUpdate")
+    tiles: Optional[List[TileModel]] = []
+    tiles_order: Optional[Any] = Field(None, alias="tilesOrder")
+    tiles_last_update: Optional[str] = Field(None, alias="tilesLastUpdate")
 
 
 class AccountModuleModel(BaseModel):
@@ -160,17 +160,17 @@ class AccountModuleModel(BaseModel):
     name: str
     email: str
     type: str
-    controller_status: Optional[str] = Field(..., alias="controllerStatus")
-    module_status: Optional[str] = Field(..., alias="moduleStatus")
-    additional_information: Optional[str] = Field(..., alias="additionalInformation")
-    phone_number: Optional[Any] = Field(..., alias="phoneNumber")
-    zip_code: Optional[str] = Field(..., alias="zipCode")
-    tag: Optional[str]
-    country: Optional[str]
-    gmt_id: Optional[int] = Field(..., alias="gmtId")
-    gmt_time: Optional[str] = Field(..., alias="gmtTime")
-    postcode_policy_accepted: bool = Field(..., alias="postcodePolicyAccepted")
-    style: Optional[str]
-    version: Optional[str]
-    company: Optional[str]
+    controller_status: Optional[str] = Field(None, alias="controllerStatus")
+    module_status: Optional[str] = Field(None, alias="moduleStatus")
+    additional_information: Optional[str] = Field(None, alias="additionalInformation")
+    phone_number: Optional[Any] = Field(None, alias="phoneNumber")
+    zip_code: Optional[str] = Field(None, alias="zipCode")
+    tag: Optional[str] = None
+    country: Optional[str] = None
+    gmt_id: Optional[int] = Field(None, alias="gmtId")
+    gmt_time: Optional[str] = Field(None, alias="gmtTime")
+    postcode_policy_accepted: bool = Field(None, alias="postcodePolicyAccepted")
+    style: Optional[str] = None
+    version: Optional[str] = None
+    company: Optional[str] = None
     udid: str
