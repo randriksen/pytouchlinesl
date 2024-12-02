@@ -62,7 +62,7 @@ class Module:
         self._raw_data: ModuleModel
         # Unix timestamp representing the last time the _raw_data was fetched
         self._last_fetched = 0
-        self._cache_validity = cache_validity
+        self._cache_validity = cache_validity * 1000
 
         self._zones: list[Zone] = []
         self._schedules: list[GlobalScheduleModel] = []
@@ -96,13 +96,13 @@ class Module:
             include_off: (Optional) Include zones which are switched off in the results.
             refresh:     (Optional) Force the data to be refreshed using the API.
         """
-        if not self._zones or refresh:
-            data = await self._data(refresh=refresh)
+        data = await self._data(refresh=refresh)
 
-            for z in data.zones.elements:
-                schedule = await self.schedule_by_idx(z.mode.schedule_index)
-                zone = Zone(module=self, client=self._client, zone_data=z, schedule=schedule)
-                self._zones.append(zone)
+        self._zones = []
+        for z in data.zones.elements:
+            schedule = await self.schedule_by_idx(z.mode.schedule_index)
+            zone = Zone(module=self, client=self._client, zone_data=z, schedule=schedule)
+            self._zones.append(zone)
 
         if include_off:
             return self._zones
@@ -136,9 +136,8 @@ class Module:
         Args:
             refresh: (Optional) Force the data to be refreshed using the API.
         """
-        if not self._schedules or refresh:
-            data = await self._data(refresh=refresh)
-            self._schedules = data.zones.global_schedules.elements
+        data = await self._data(refresh=refresh)
+        self._schedules = data.zones.global_schedules.elements
 
         return self._schedules
 
