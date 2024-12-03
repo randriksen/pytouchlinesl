@@ -31,13 +31,15 @@ class TouchlineSL:
         username: str | None = None,
         password: str | None = None,
         client: BaseClient | None = None,
+        cache_validity: int = 30,
     ):
         """Construct the instance with either credentials or an authenticated client.
 
         Args:
-            username: (Optional) Username for TouchlineSL account. Ignored if client is passed.
-            password: (Optional) Password for TouchlineSL account. Ignored if client is passed.
-            client:   (Optional) An instance of a RothAPI class.
+            username:       (Optional) Username for TouchlineSL account. Ignored if client is passed.
+            password:       (Optional) Password for TouchlineSL account. Ignored if client is passed.
+            client:         (Optional) An instance of a RothAPI class.
+            cache_validity: (Optional) The number of seconds for which module data should be cached.
         """
         self._modules: list[Module] = []
 
@@ -52,6 +54,8 @@ class TouchlineSL:
                 raise TypeError("username and password must be strings if no client is provided")
             self._client = RothAPI(username=username, password=password)
 
+        self._cache_validity = cache_validity
+
     async def user_id(self) -> int:
         """Return the unique user ID of the authenticated account."""
         return await self._client.user_id()
@@ -64,7 +68,10 @@ class TouchlineSL:
         """
         if not self._modules or refresh:
             data = await self._client.modules()
-            self._modules = [Module(client=self._client, module_data=m) for m in data]
+            self._modules = [
+                Module(client=self._client, module_data=m, cache_validity=self._cache_validity)
+                for m in data
+            ]
 
         return self._modules
 

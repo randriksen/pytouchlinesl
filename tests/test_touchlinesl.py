@@ -40,6 +40,15 @@ async def test_modules(test_touchlinesl: TouchlineSL):
     modules = await test_touchlinesl.modules()
     for m in modules:
         assert isinstance(m, Module)
+        assert m._cache_validity == 30000
+
+
+@pytest.mark.asyncio
+async def test_modules_short_cache(test_touchlinesl_short_cache: TouchlineSL):
+    modules = await test_touchlinesl_short_cache.modules()
+    for m in modules:
+        assert isinstance(m, Module)
+        assert m._cache_validity == 100
 
 
 @pytest.mark.asyncio
