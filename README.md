@@ -77,6 +77,8 @@ if __name__ == "__main__":
 Contributions in either code or documentation are welcome. The set of features is limited at the
 moment, but I'm happy to expand as the need arises.
 
+Commit messages and PR titles should be formatted using [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
+
 The project does not have many dependencies; just `asyncio` and `pytest`/`pytest-asyncio` for
 testing.
 
