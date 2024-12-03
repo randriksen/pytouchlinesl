@@ -46,6 +46,16 @@ async def test_zones_cache(test_module):
 
 
 @pytest.mark.asyncio
+async def test_zones_cache_expired(test_module_short_cache):
+    await test_module_short_cache.zones()
+    initial_fetch_time = test_module_short_cache._last_fetched
+    await asyncio.sleep(0.25)
+
+    await test_module_short_cache.zones()
+    assert initial_fetch_time != test_module_short_cache._last_fetched
+
+
+@pytest.mark.asyncio
 async def test_zones_force_refresh(test_module):
     await test_module.zones()
     initial_fetch_time = test_module._last_fetched
@@ -117,6 +127,16 @@ async def test_schedules_cache(test_module):
 
     await test_module.schedules()
     assert initial_fetch_time == test_module._last_fetched
+
+
+@pytest.mark.asyncio
+async def test_schedules_cache_expired(test_module_short_cache):
+    await test_module_short_cache.schedules()
+    initial_fetch_time = test_module_short_cache._last_fetched
+    await asyncio.sleep(0.5)
+
+    await test_module_short_cache.schedules()
+    assert initial_fetch_time != test_module_short_cache._last_fetched
 
 
 @pytest.mark.asyncio
