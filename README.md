@@ -119,3 +119,12 @@ ruff check --fix
 # Format the code
 ruff format
 ```
+
+## Releasing
+
+Once all the changes have been merged into `main` for a release, use the
+[`.github/tag-release`](./.github/tag-release.sh) script to create a version bump commit in the
+right format, create, **and push** the tag ready for release.
+
+This could be automated with Github Actions - but commit signing gets a little complicated, so for
+now it's just a script that can be run by maintainers.
