@@ -103,6 +103,13 @@ class RothAPI(BaseClient):
             await self._login()
 
         resp = await self._authed_get(f"/users/{self._user_id}/modules/{module_id}")
+        
+        """Because of a later check in pydantic a description is required. the Tiles don't always have a description. this adds an empty description when there is none in the tiles."""
+        if "tiles" in resp:
+            for tile in resp["tiles"]:
+                if "params" in tile and "description" not in tile["params"]:
+                    tile["params"]["description"] = ""
+
         return ModuleModel(**resp)
 
     async def set_zone_temperature(
