@@ -126,7 +126,7 @@ class ZonesModel(BaseModel):
 
 
 class ParamsModel(BaseModel):
-    description: Optional[str]
+    description: Optional[str] = None
     working_status: Optional[bool] = Field(None, alias="workingStatus")
     txt_id: Optional[int] = Field(None, alias="txtId")
     icon_id: Optional[int] = Field(None, alias="iconId")

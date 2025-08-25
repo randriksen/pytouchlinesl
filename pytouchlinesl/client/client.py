@@ -103,6 +103,7 @@ class RothAPI(BaseClient):
             await self._login()
 
         resp = await self._authed_get(f"/users/{self._user_id}/modules/{module_id}")
+
         return ModuleModel(**resp)
 
     async def set_zone_temperature(
